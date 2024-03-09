@@ -2,75 +2,75 @@
 const Skills = () => {
     return (
         <>
-            <div class="skills-section">
+            <div className="skills-section">
 
-                <div class="">
-                    <div class="">
+                <div className="">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class=""> HTML 5</p>
+                    <p className=""> HTML 5</p>
                 </div>
 
-                <div class="">
-                    <div class="">
+                <div className="">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class=""> CSS 3</p>
+                    <p className=""> CSS 3</p>
                 </div>
 
-                <div class="skills-sass ">
-                    <div class="">
+                <div className="skills-sass ">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class=""> SASS</p>
-                </div>
-
-            </div>
-            <div class="skills-section">
-
-                <div class="">
-                    <div class="">
-                        {/* <!-- The SVG file will placed here --> */}
-                    </div>
-                    <p class=""> JavaScript</p>
-                </div>
-
-                <div class="">
-                    <div class="">
-                        {/* <!-- The SVG file will placed here --> */}
-                    </div>
-                    <p class=""> Node.js</p>
-                </div>
-
-                <div class="">
-                    <div class="">
-                        {/* <!-- The SVG file will placed here --> */}
-                    </div>
-                    <p class=""> Node.js</p>
+                    <p className=""> SASS</p>
                 </div>
 
             </div>
-            <div class="skills-section">
+            <div className="skills-section">
 
-                <div class="">
-                    <div class="">
+                <div className="">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class=""> Prisma</p>
+                    <p className=""> JavaScript</p>
                 </div>
 
-                <div class="">
-                    <div class="">
+                <div className="">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class=""> Git</p>
+                    <p className=""> Node.js</p>
                 </div>
 
-                <div class="">
-                    <div class="">
+                <div className="">
+                    <div className="">
                         {/* <!-- The SVG file will placed here --> */}
                     </div>
-                    <p class="">Github</p>
+                    <p className=""> Node.js</p>
+                </div>
+
+            </div>
+            <div className="skills-section">
+
+                <div className="">
+                    <div className="">
+                        {/* <!-- The SVG file will placed here --> */}
+                    </div>
+                    <p className=""> Prisma</p>
+                </div>
+
+                <div className="">
+                    <div className="">
+                        {/* <!-- The SVG file will placed here --> */}
+                    </div>
+                    <p className=""> Git</p>
+                </div>
+
+                <div className="">
+                    <div className="">
+                        {/* <!-- The SVG file will placed here --> */}
+                    </div>
+                    <p className="">Github</p>
                 </div>
 
             </div>
