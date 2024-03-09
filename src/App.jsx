@@ -9,23 +9,39 @@ import './App.css'
 
 function App() {
 
-  const Navbar = () => {
+  const [isShown, setIsShown] = useState(false)
+
+  const navBtn = () => {
+    console.log('clicked')
+    setIsShown((initalValue) => !initalValue)
+  }
+
+  console.log(isShown)
+
+  const NavBar = () => {
+      
     return (
-      <ul>
-        <li><Link to={'/'}>Home</Link></li>
-        <li><Link to={'/about'}>About</Link></li>
-        <li><Link to={'/skills'}>Skills</Link></li>
-        <li><Link to={'/contact'}>Contact</Link></li>
-      </ul>
+      <header>
+        <button onClick={navBtn}>&#9776;</button>
+        <nav className={`nav-bar ${isShown? 'open' : ''}`}>
+          <ul>
+            <li><Link to ='/'>Home</Link></li>
+            <li><Link to ='/about'>About</Link></li>
+            <li><Link to ='/skills'>Skills</Link></li>
+            <li><Link to ='/contact'>Contact</Link></li>
+          </ul>
+        </nav>
+      </header>
     )
   }
+  
 
 
 
   return (
     <>
       <Router>
-        <Navbar/>
+        <NavBar/>
         <Routes>
           <Route path='/about' element={<About/>}/>
           <Route path='/contact' element={<Contact/>}/>

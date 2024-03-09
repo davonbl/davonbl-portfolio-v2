@@ -8,3 +8,134 @@
 body{
   background: #1B1D22;
 }
+
+header {
+  text-align: right;
+}
+
+.nav-bar{
+  display:none;   
+  /* max-height: 0; */
+  /* overflow: hidden; */
+
+}
+
+.nav-bar.open{
+  display: block;
+  /* max-height: 1000px; */
+  /* overflow: visible;  */
+}
+
+button{
+  border: 2px solid black;
+  background-color: transparent;
+}
+
+li, a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+}
+
+/****************
+  
+  BreakPoints
+
+****************/
+
+/* 640 pixels for tablet  */
+@media screen and (mid-width: 40rem ){
+
+}
+
+/* 1280 pixels/ 80rem for desktop  */
+@media screen and (mid-width: 80rem){
+
+}
+
+/* Big display */
+@media screen and (mid-width: 160rem ) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .testing{
+  text-align: right;
+}
+
+.navBar{
+  text-align: center;
+  list-style: none;
+  max-height: 0;
+  overflow:hidden;
+}
+
+.navBar.open{
+  max-height: 1000px;
+  overflow: visible;
+}
+
+li, a{
+  list-style: none;
+  color: rgb(182, 173, 173);
+  text-decoration: none; 
+} */
