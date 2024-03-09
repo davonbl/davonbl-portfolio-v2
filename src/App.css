@@ -5,8 +5,15 @@
   /* text-align: center; */
 }
 
+@font-face{
+  font-family: mainFont;
+  src: url(./styles/font-family/eight-bit-dragon-font/EightBitDragon-anqx.ttf)
+}
+
 body{
-  background: #1B1D22;
+  font-family: mainFont,'Courier New', Courier, monospace; 
+  background: #1B1D22; 
+  color: whitesmoke; 
 }
 
 header {
@@ -45,17 +52,46 @@ li, a{
 ****************/
 
 /* 640 pixels for tablet  */
-@media screen and (mid-width: 40rem ){
+@media screen and (min-width: 40rem ){
+  header{
+    padding-top: 0.625rem; 
+  }
+   .btn-none{
+    display:none;
+  }
+  .nav-bar-tablet{
+    display: block; 
+  }
+  .nav-bar-tablet ul{
+    /* display: flex;
+    flex-direction: row; */
+    text-align: center;
+    /* margin: auto; */
+    /* align-content: space-between;
+    justify-content: space-evenly; */
+  }
+  .toc-nav{
+    display: inline-block; 
+    width: 20%;
+    padding-bottom: 3.125rem; 
+  }
+  /*
+  header{
+    display: none; 
+  }
 
+  li, a{
+    font-size: 30px;
+  } */
 }
 
 /* 1280 pixels/ 80rem for desktop  */
-@media screen and (mid-width: 80rem){
+@media screen and (min-width: 80rem){
 
 }
 
 /* Big display */
-@media screen and (mid-width: 160rem ) {
+@media screen and (min-width: 160rem ) {
   
 }
 

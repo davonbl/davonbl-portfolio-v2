@@ -22,13 +22,13 @@ function App() {
       
     return (
       <header>
-        <button onClick={navBtn}>&#9776;</button>
-        <nav className={`nav-bar ${isShown? 'open' : ''}`}>
+        <button className='btn-none' onClick={navBtn}>&#9776;</button>
+        <nav className={`nav-bar nav-bar-tablet ${isShown? 'open' : ''}`}>
           <ul>
-            <li><Link to ='/'>Home</Link></li>
-            <li><Link to ='/about'>About</Link></li>
-            <li><Link to ='/skills'>Skills</Link></li>
-            <li><Link to ='/contact'>Contact</Link></li>
+            <li className='toc-nav'><Link to ='/'>Home</Link></li>
+            <li className='toc-nav'><Link to ='/about'>About</Link></li>
+            <li className='toc-nav'><Link to ='/skills'>Skills</Link></li>
+            <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
           </ul>
         </nav>
       </header>
