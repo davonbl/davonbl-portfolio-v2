@@ -48,7 +48,10 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/contact' element={
+          <Contact
+            email = 'davonbl@gmail.com'
+          />}/>
           <Route path='/' element={<Home/>}/>
           <Route path='/skills' element={<Skills/>}/>
         </Routes>
