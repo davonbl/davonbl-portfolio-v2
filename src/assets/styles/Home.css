@@ -1,0 +1,61 @@
+.home-photo{
+    border-radius: 4.2rem;
+    width: 50%;
+    padding-top: 22px;
+}
+
+.home-main{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    line-height: 1.5;
+}
+
+.home-main--info{
+    background: white;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 16px;
+}
+
+h1{
+    font-size: 1.1875rem;
+    /* line-height: 1.5; */
+}
+
+/****************
+  
+  BreakPoints
+
+****************/
+
+/* 640 pixels for tablet  */
+@media screen and (min-width: 40rem ){
+    .home{
+        display: flex; 
+        gap: 16px;
+    }
+
+    ul{
+        height: auto; 
+    }
+
+    .home-photo{
+        width: auto;
+
+    }
+
+    /* .home-main--info{
+        gap: 16px;
+    } */
+  }
+  
+  /* 1280 pixels/ 80rem for desktop  */
+  @media screen and (min-width: 80rem){
+  
+  }
+  
+  /* Big display */
+  @media screen and (min-width: 160rem ) {
+    
+  }

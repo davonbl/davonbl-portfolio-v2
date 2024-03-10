@@ -22,7 +22,11 @@ function App() {
       
     return (
       <header>
-        <button className='btn-none' onClick={navBtn}>&#9776;</button>
+        <button className='btn-none' onClick={navBtn}>
+          <span className='hamburger-logo'>
+            &#9776;
+          </span>
+        </button>
         <nav className={`nav-bar nav-bar-tablet ${isShown? 'open' : ''}`}>
           <ul>
             <li className='toc-nav'><Link to ='/'>Home</Link></li>
