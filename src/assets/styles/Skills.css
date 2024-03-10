@@ -1,0 +1,11 @@
+.skills-section{
+    text-align: center;  
+    flex-direction: row;
+    justify-content: space-between;
+    display: flex; 
+ }
+
+.skills-section-1{
+    width: 30%; 
+    display:inline-block; 
+}

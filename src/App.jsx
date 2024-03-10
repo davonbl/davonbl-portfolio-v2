@@ -51,9 +51,15 @@ function App() {
           <Route path='/contact' element={
           <Contact
             email = 'davonbl@gmail.com'
+            link = 'https://www.linkedin.com/in/davonbl/'
           />}/>
           <Route path='/' element={<Home/>}/>
-          <Route path='/skills' element={<Skills/>}/>
+          <Route path='/skills' element={
+          <Skills
+            skillOne = { 'HTML 5'}
+            skillTwo = {'CSS 3'}
+            skillThree = { 'SASS'}
+          />}/>
         </Routes>
       </Router>
     </>
