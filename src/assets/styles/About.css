@@ -1,0 +1,46 @@
+.about-me__photo, .about-me__info{
+    text-align: center;
+}
+
+.about-me__photo-edit{
+    border-radius: .875rem;
+    height: 15.8125rem;
+    margin: 3.25rem auto;
+}
+
+.about-me__info{
+    background-color: white;
+    color: black;
+    border-radius: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/****************
+  
+  BreakPoints
+
+****************/
+
+/* 640 pixels for tablet  */
+
+
+@media screen and (min-width: 40rem ) {
+    .about-me{
+        display: flex; 
+        flex-direction: row-reverse;
+        gap: 10px; 
+    }
+}
+
+/* 1280 pixels/ 80rem for desktop  */
+@media screen and (min-width: 80rem){
+
+}
+
+/* Big display */
+@media screen and (min-width: 160rem ) {
+  
+}
