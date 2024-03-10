@@ -4,6 +4,7 @@ import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Home from './components/Home.jsx'
 import Skills from './components/Skills.jsx'
+import Footer from './components/Footer.jsx'
 
 // Image logos
 import html5Logo from './assets/styles/images/html5.png'
@@ -100,6 +101,7 @@ function App() {
           }
           />
         </Routes>
+        <Footer/>
       </Router>
     </>
   )
