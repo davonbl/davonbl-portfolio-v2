@@ -1,11 +1,27 @@
+.skills{
+    margin-top: 50px;
+}
+
 .skills-section{
     text-align: center;  
     flex-direction: row;
     justify-content: space-between;
     display: flex; 
+    width: 100%; 
+ }
+
+ .skills-section-container{
+    width:100%; 
  }
 
 .skills-section-1{
     width: 30%; 
     display:inline-block; 
 }
+
+
+.skills-section--image{
+    width: 35%;
+    /* border-radius: 70px; */
+}
+

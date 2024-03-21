@@ -1,7 +1,19 @@
 .home-photo{
-    border-radius: 4.2rem;
+    /* border-radius: 4.2rem;
     width: 50%;
-    padding-top: 22px;
+    padding-top: 22px; */
+
+    /* border-radius: 4.2rem;  this will be taken out */
+    width: 50%;
+    /* padding-top: 22px;  this will be taken out */
+    border: 10px solid rgb(137, 176, 168);
+    filter: drop-shadow(0.8rem 0.9rem 0rem rgba(0, 0, 0, 0.85));
+     /* this will be added when you hover the image for the shadow effect  */
+    
+    outline: 2px solid black;
+
+
+    
 }
 
 .home-main{
@@ -11,16 +23,50 @@
 }
 
 .home-main--info{
-    background: white;
+    /* background: white;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 16px; */
+
+    
+    /* new edits  */
+    /* background: #e2e2e2;
     color: black;
     border-radius: 8px;
     padding: 10px;
     margin-top: 16px;
+    height: 290px;
+    border: 2px solid black;
+    height: 104px; */
+
+    background: #e2e2e2;
+    color: black;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 16px;
+    height: 290px;
+    border: 2px solid black;
+    height: 156px;
+    margin-right: 9px;
+    width: 85%;
+    margin: auto;
+    margin-top: 16px;
+    /* width: 38%; */
+
 }
 
 h1{
     font-size: 1.1875rem;
     /* line-height: 1.5; */
+}
+
+.home-main__p{
+    display:none; 
+}
+
+.skills-section{
+    margin-top: 25px; 
 }
 
 /****************
@@ -41,18 +87,32 @@ h1{
     }
 
     .home-photo{
-        width: auto;
+        /* width: auto; */
+        /* width: 65%; */
+        width: 65%;
 
     }
 
     /* .home-main--info{
         gap: 16px;
     } */
+    .home-main--info {
+        width: 38%;
+    }
+
+    .home-main-img{
+        margin: auto;
+    }
   }
   
   /* 1280 pixels/ 80rem for desktop  */
   @media screen and (min-width: 80rem){
-  
+    
+    .home-photo{
+        width: auto;
+
+    }
+
   }
   
   /* Big display */

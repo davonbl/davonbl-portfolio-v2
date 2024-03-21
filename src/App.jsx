@@ -79,6 +79,7 @@ function App() {
               skillTwoImg={css3Logo}
               skillThree = { 'SASS'}
               skillThreeImg = {sassLogo}
+              skillsThreeWidth= {'33%;'}
             />
             <Skills
               skillOne = { 'Javascript'}
@@ -96,6 +97,7 @@ function App() {
               skillTwoImg = {gitLogo}
               skillThree = { 'Github'}
               skillThreeImg = {githubLogo}
+              skillThreeWidth1={'111%;'}
               />
             </>
           }

@@ -8,10 +8,15 @@ const Skills = (props) => {
     const skillThree = props.skillThree
     const skillThreeImg = props.skillThreeImg
 
+    const skillThreeWidth = props.skillThreeWidth; 
+    const skillThreeWidth1 = props.skillThreeWidth1; 
+
 
     return (
-        <>
+        <div className='skills'>
+
             <div className="skills-section">
+
 
                 <div className="skills-section-container">
                     <div className="skills-section-logo">
@@ -20,7 +25,7 @@ const Skills = (props) => {
                             className ="skills-section--image" 
                             src={skillOneImg} 
                             alt='image of logo'
-                            style={{width:"35%"}} 
+                            style={{width: skillThreeWidth}}
                         />
                     </div>
                     <p className="skills-section-title">{skillOne}</p>
@@ -33,7 +38,7 @@ const Skills = (props) => {
                             className ="skills-section--image" 
                             src={skillTwoImg} 
                             alt='image of logo'
-                            style={{width:"35%"}} 
+                            
                         />
                     </div>
                     <p className="skills-section-title"> {skillTwo}</p>
@@ -45,14 +50,15 @@ const Skills = (props) => {
                             className ="skills-section--image" 
                             src={skillThreeImg} 
                             alt='image of logo'
-                            style={{width:"35%"}} 
+                            style={{width: skillThreeWidth1}}
+                            // style={{width:"33%"}} 
                         />
                     </div>
                     <p className="skills-section-title"> {skillThree}</p>
                 </div>
 
             </div>
-        </>
+        </div>
     )
 }
 
