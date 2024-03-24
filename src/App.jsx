@@ -1,10 +1,13 @@
-import { useState } from 'react'
+import {useRef, useState, useEffect} from 'react'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
+// Components
 import About from './components/About.jsx'
 import Contact from './components/Contact.jsx'
 import Home from './components/Home.jsx'
 import Skills from './components/Skills.jsx'
 import Footer from './components/Footer.jsx'
+// import Projects from './components/Projects.jsx'
 
 // Image logos
 import html5Logo from './assets/styles/images/html5.png'
@@ -25,30 +28,85 @@ import './App.css'
 function App() {
 
   const [isShown, setIsShown] = useState(false)
+  const [flickColor, setFlickColor]= useState(false)
+
+  const bodyElement = useRef()  
+  const rootElement = useRef()
+
+  useEffect(() => {
+    bodyElement.current = document.body;
+    rootElement.current = document.querySelector('#root')
+  }, [])
+
+  useEffect(() => {
+    if(flickColor){
+      console.log('it is now true')
+      // bodyElement.current.style.backgroundColor = 'lightblue'
+      // bodyElement.current.style.backgroundImage = "url('../src/assets/background-images/black-squares-edit.jpg')"
+      // "url('path_to_your_image')"
+      // bodyElement.current.style.backgroundRepeat = 'no-repeat'
+      // rootElement.current.style.backgroundColor = 'black'
+      // console.log(flickColor)
+
+      bodyElement.current.style.backgroundColor = 'black'
+    }else{
+      console.log('it is now false')
+      //with this color (which is by default) will show up inline when inspecting
+      bodyElement.current.style.backgroundColor = ''
+      bodyElement.current.style.backgroundImage = ""
+    }
+    
+  },[flickColor])
+
+
 
   const navBtn = () => {
     console.log('clicked')
     setIsShown((initalValue) => !initalValue)
   }
 
-  console.log(isShown)
+  console.log('ham-menu-btn', isShown)
+
+  const testingBtn = () => {
+    console.log('click here')
+    setFlickColor(initalColor => !initalColor)
+  }
+
+  console.log('color-btn', flickColor)
 
   const NavBar = () => {
-      
+      // background-image: url("gradient_bg.png");
+
     return (
       <header>
-        <button className='btn-none' onClick={navBtn}>
-          <span className='hamburger-logo'>
-            &#9776;
-          </span>
-        </button>
-        <nav className={`nav-bar nav-bar-tablet ${isShown? 'open' : ''}`}>
+      <div className='header__mobile header__tablet'>
+          <h2 className='header__h2'>davonbl</h2>
+          <button className='visual-btn--mobile' onClick={testingBtn}>Click</button>
+
+          <button className='btn-none' onClick={navBtn}>
+            <span className='hamburger-logo'>
+              &#9776;
+            </span>
+          </button>
+
+          <nav className={`nav-bar nav-bar-tablet`}>
+            <ul>
+              <li className='toc-nav'><Link to ='/'>Home</Link></li>
+              <li className='toc-nav'><Link to ='/about'>About</Link></li>
+              {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
+              <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
+            </ul>
+            <button className='visual-btn--tablet' onClick={testingBtn}>Click</button>
+          </nav>
+      </div>
+      <nav className={`nav-bar nav-bar-mobile ${isShown? 'open' : ''}`}>
           <ul>
             <li className='toc-nav'><Link to ='/'>Home</Link></li>
             <li className='toc-nav'><Link to ='/about'>About</Link></li>
-            <li className='toc-nav'><Link to ='/skills'>Skills</Link></li>
+            {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
             <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
           </ul>
+          <button className='visual-btn--tablet' onClick={testingBtn}>Click</button>
         </nav>
       </header>
     )

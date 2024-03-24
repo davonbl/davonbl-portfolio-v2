@@ -1,5 +1,9 @@
+// import {useRef, useState, useEffect} from 'react'
+
 import '../assets/styles/Home.css'
 import davonImg from '../assets/styles/images/dmb-larger.png'
+
+import Projects from './Projects.jsx'
 
 import Skills from './Skills.jsx'
 import '../assets/styles/Skills.css'
@@ -23,7 +27,7 @@ import npmLogo from '../assets/svg-files/npm-free.svg'
 
 const Home = () => {
     return (
-        <>
+        <div id='testing'>
             <main className='home'>
                 <div className = 'home-main home-main-img'>
                     <img className = 'home-photo' src = {davonImg}/>
@@ -42,6 +46,9 @@ const Home = () => {
                     </p>
                 </div>
             </main>
+
+            <Projects />
+
 
             <div>
                 <h3 style={{textAlign: "center"}}>Skills</h3>
@@ -80,7 +87,7 @@ const Home = () => {
                   skillThreeImg = {npmLogo}
                   />
             </div>
-        </>
+        </div>
     )
 }
 

@@ -5,13 +5,15 @@
 .skills-section{
     text-align: center;  
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     display: flex; 
     width: 100%; 
+    justify-content: center;
  }
 
  .skills-section-container{
-    width:100%; 
+    /* width:100%;  */
+    width: 25%;
  }
 
 .skills-section-1{

@@ -69,6 +69,19 @@ h1{
     margin-top: 25px; 
 }
 
+.testing{
+    background-color: red;
+}
+
+#testing{
+    background: #a3a1a1;
+}
+
+.home{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 /****************
   
   BreakPoints
@@ -78,8 +91,10 @@ h1{
 /* 640 pixels for tablet  */
 @media screen and (min-width: 40rem ){
     .home{
-        display: flex; 
+        display: flex;
         gap: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     ul{
@@ -108,10 +123,10 @@ h1{
   /* 1280 pixels/ 80rem for desktop  */
   @media screen and (min-width: 80rem){
     
-    .home-photo{
+    /* .home-photo{
         width: auto;
 
-    }
+    } */
 
   }
   
