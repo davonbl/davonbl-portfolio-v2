@@ -11,5 +11,7 @@
     box-shadow: rgb(206, 232, 227) 1px 1px 0px 1px inset, rgb(82, 109, 103) -1px -1px 0px 1px inset;
     box-sizing: border-box;
     margin-top:0px; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #00000047;
 
 }

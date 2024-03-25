@@ -35,7 +35,8 @@
     text-align: center;
     color: black;
     font-family: monospace;
-    font-size: 23px;
+    /* font-size: 23px; */
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -55,3 +56,30 @@
         transform: translateY(0);
     }
 }
+
+/****************
+  
+  BreakPoints
+
+****************/
+
+/* 640 pixels for tablet  */
+
+/* 40rem */
+@media screen and (min-width: 690px ){
+    .skills-section-title{
+
+        font-size: 23px;
+
+    }
+  }
+  
+  /* 1280 pixels/ 80rem for desktop  */
+  @media screen and (min-width: 80rem){
+  
+  }
+  
+  /* Big display */
+  @media screen and (min-width: 160rem ) {
+    
+  }

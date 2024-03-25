@@ -26,7 +26,7 @@ body{
   cursor: url('../src/assets/icons/default_cursor.png'),auto;
 }
 
-ul:hover, a:hover, .visual-btn--tablet{
+ul:hover, a:hover, .visual-btn--tablet, .visual-btn--mobile, .nav-bar.open, .hamburger-btn-mobile, .hamburger-logo{
   cursor: url('../src/assets/icons/cursor_hover.png'), auto;
 } 
 
