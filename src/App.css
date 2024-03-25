@@ -120,15 +120,18 @@ li, a{
   width: 75%;
 } */
 
-.toc-nav a:hover {
+/* .toc-nav a:hover {
   background-color: #2d4a30ad;
   border-radius: 5px;
   background-color: #2d4a30b3;
   width: 75%;
   display: inline-block;
   height: 23px;
-  /* padding-top: 6px; */
-}
+
+
+  padding-top: 6px; 
+
+} */
 
 #root.click{
   background-image: url("../src/assets/background-images/black-squares-edit.jpg");

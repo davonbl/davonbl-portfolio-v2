@@ -1,4 +1,5 @@
-// import {useRef, useState, useEffect} from 'react'
+import {useRef, useState, useEffect} from 'react'
+import { HashLink as SubLink } from "react-router-hash-link"
 
 import '../assets/styles/Home.css'
 import davonImg from '../assets/styles/images/dmb-larger.png'
@@ -29,6 +30,13 @@ import npmLogo from '../assets/svg-files/npm-free.svg'
 
 
 const Home = () => {
+
+    const contactSection = useRef();
+
+    useEffect(() => {
+        contactSection.current = document.querySelector('#contact')
+    }, [])
+
     return (
         <div id='testing'>
             <main className='home'>
@@ -42,6 +50,17 @@ const Home = () => {
                         Peace, I'm Davon. Let's build and make a 
                         impact. 
                     </h1>
+                    <div className='home__section--links'>
+                        <SubLink 
+                            to = '#contact' 
+                            >
+                            <span className='home__section--link--contact'>CONTACT</span>
+                        </SubLink>
+                        {/* <span className='home__section--link--contact'>CONTACT</span> */}
+                        <span className='home__section--link--resume'>RESUME</span>
+                    </div>
+                    {/* <span className='.home__section--link-contact'>COMING SOON</span>
+                    <span className='.home__section--link--resume'>COMING SOON</span> */}
                     <p className = 'home-main__p'>
                         I am focusing on manifesting ideas into qualitative and scaleable software 
                         applications. I am also eager to collaborate with like-minded people to craft 

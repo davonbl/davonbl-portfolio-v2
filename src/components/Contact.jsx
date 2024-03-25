@@ -33,7 +33,8 @@ const Contact = () => {
 
         
     return (
-        <section className="contact">
+        
+        <section id="contact" className="contact">
             <h3 className="contact__section-name">Contact</h3>
             <p className="contact__info">
                 Would you like to get in touch? Then lets break bread and chat. Here are 
