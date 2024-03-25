@@ -1,5 +1,9 @@
+.about-me{
+    background-color: gray;
+}
+
 .about-me__photo, .about-me__info{
-    background-color: #9c9c9c;
+    /* background-color: #9c9c9c; */
     text-align: center;
 }
 

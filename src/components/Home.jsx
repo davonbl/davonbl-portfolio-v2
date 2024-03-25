@@ -8,7 +8,10 @@ import Projects from './Projects.jsx'
 import Skills from './Skills.jsx'
 import '../assets/styles/Skills.css'
 
-import html5Logo from '../assets/svg-files/html5.svg'
+import Contact from './Contact.jsx'
+
+// import html5Logo from '../assets/svg-files/html5.svg'
+import html5Logo from '../assets/png-and-jpg-files/html-5.png'
 import sassLogo from '../assets/svg-files/sass-free.svg'
 import css3Logo from '../assets/svg-files/css3-free.svg'
 
@@ -87,6 +90,12 @@ const Home = () => {
                   skillThreeImg = {npmLogo}
                   />
             </div>
+            
+            <Contact
+                // email = 'davonbl@gmail.com'
+                // link = 'https://www.linkedin.com/in/davonbl/'
+            />
+
         </div>
     )
 }

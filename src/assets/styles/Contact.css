@@ -1,6 +1,11 @@
+.contact{
+  background-color: gray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 2px solid black; 
+}
 
-
-.contact-page{
+.contact__page{
     font-size: 26px;
     padding-top: 10px; 
     background-color: white;
@@ -10,6 +15,49 @@
     padding-bottom: 5px;
 }
 
+.contact__section-name{
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  font-size: 30px;
+  color: black;
+}
+
+.contact__info{
+  font-family: monospace;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px; 
+  font-size: 23px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.contact__sub-section{
+  display: flex;
+  /* text-align: center; */
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.contact__icons{
+  display: flex; 
+  text-align: center;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.contact__images{
+  width: 30%;
+}
+
+/* .contact__image-3{
+  width: 25%; 
+} */
+
+.contact__logo-adjust{
+  padding-top: 12px;
+}
 
 
 /****************
@@ -20,7 +68,7 @@
 
 /* 640 pixels for tablet  */
 @media screen and (min-width: 40rem ){
-    .contact-page{
+    .contact__page{
         width: 50%;
         text-align: center;
         margin: auto;

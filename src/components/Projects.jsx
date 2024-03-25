@@ -22,7 +22,7 @@ const Projects = () => {
             <div className="projects__all projects__three">
                 <img className='projects__image projects__image-three' src={hollowTreePng}/>
                 <div className='overlay'>
-                    <span className='projects__three-span'>Hollow Tree</span>
+                    <span className='projects__three-span'>Hollow Tree - COMING SOON</span>
                 </div>
                     
             </div>

@@ -97,7 +97,8 @@ button{
 
 ul{
   /* height: 150px; */
-  height: 100px; 
+  /* height: 100px;  */
+  height: 60px;
 }
 
 li, a{
@@ -290,7 +291,7 @@ header{
     display: flex;
     margin-top: 0;
     width: 49%;
-    padding-right: 30px;
+    /* padding-right: 30px; */
   }
   .toc-nav{
     display: inline-block; 

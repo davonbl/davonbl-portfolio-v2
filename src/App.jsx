@@ -130,7 +130,7 @@ function App() {
               <li className='toc-nav'><Link to ='/'>Home</Link></li>
               <li className='toc-nav'><Link to ='/about'>About</Link></li>
               {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
-              <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
+              {/* <li className='toc-nav'><Link to ='/contact'>Contact</Link></li> */}
             </ul>
             <button className='visual-btn--tablet' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
           </nav>
@@ -140,7 +140,7 @@ function App() {
             <li className='toc-nav'><Link to ='/'>Home</Link></li>
             <li className='toc-nav'><Link to ='/about'>About</Link></li>
             {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
-            <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
+            {/* <li className='toc-nav'><Link to ='/contact'>Contact</Link></li> */}
           </ul>
           <button className='visual-btn--tablet' onClick={testingBtn}>Click</button>
         </nav>
@@ -157,11 +157,17 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path='/about' element={<About/>}/>
-          <Route path='/contact' element={
-          <Contact
-            email = 'davonbl@gmail.com'
-            link = 'https://www.linkedin.com/in/davonbl/'
-          />}/>
+
+          {/* <Route path='/contact' element={
+
+            <Contact
+              email = 'davonbl@gmail.com'
+              link = 'https://www.linkedin.com/in/davonbl/'
+            />}
+          
+          /> */}
+
+
           <Route path='/' element={<Home/>}/>
 
           <Route path='/skills' element={
