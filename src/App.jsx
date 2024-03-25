@@ -52,7 +52,9 @@ function App() {
       // rootElement.current.style.backgroundColor = 'black'
       // console.log(flickColor)
 
-      bodyElement.current.style.backgroundColor = 'black'
+      // bodyElement.current.style.backgroundColor = 'black'
+      bodyElement.current.style.backgroundColor = '#252222'
+
       // clickBtnElement.current.style.innerText  = 'light mode'
       // getText = clickBtnElement.current.style.innerText
       console.log(clickBtnElement)
