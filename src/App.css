@@ -235,6 +235,14 @@ header{
   
 }
 
+.logoName{
+  width: 100%;
+}
+
+a{
+  width: 100%;
+}
+
 /****************
   
   BreakPoints
@@ -245,6 +253,14 @@ header{
 
 /* 40rem */
 @media screen and (min-width: 690px ){
+
+  a{
+    width: 30%;
+  }
+
+  /* .visual-btn--tablet{
+    width: 30%;
+  } */
   .nav-bar-mobile{
     display: none; 
   }
@@ -333,7 +349,8 @@ header{
     border-radius: 3px;
     font-family: monospace;
     font-weight: 800;
-    width: 18%;
+    /* width: 18%; */
+    width: 31%; 
   }
 }
 

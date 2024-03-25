@@ -118,7 +118,7 @@ function App() {
     return (
       <header>
       <div className='header__mobile header__tablet'>
-          <Link to ='/'><h2 className='header__h2'>davonbl</h2></Link>
+          <Link className='logoName' to ='/'><h2 className='header__h2'>davonbl</h2></Link>
           {/* <h2 className='header__h2'>davonbl</h2> */}
           <button id='testingBtn' className='visual-btn--mobile' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
 
