@@ -20,8 +20,11 @@ const Projects = () => {
             </div>
 
             <div className="projects__all projects__three">
-                <img className='projects__image' src={hollowTreePng}/>
-                <span>Hollow Tree</span>
+                <img className='projects__image projects__image-three' src={hollowTreePng}/>
+                <div className='overlay'>
+                    <span className='projects__three-span'>Hollow Tree</span>
+                </div>
+                    
             </div>
         </section>
     )

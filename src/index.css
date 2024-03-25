@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  cursor: url('../src/assets/icons/default_cursor.png'), auto;
 
   /* this is the edits */
 
@@ -33,7 +34,9 @@
   background-image: radial-gradient(circle, #000000 1px, rgba(0, 0, 0, 0) 1px);  */
 }
 
-
+/* :root:hover{
+  cursor: url('../src/assets/icons/cursor_hover.png'), auto;
+} */
 
 /* body { */
 

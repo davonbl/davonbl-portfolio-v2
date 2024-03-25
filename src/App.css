@@ -23,7 +23,14 @@ body{
   max-width: 917px;
   /* margin: auto; */
   /* margin-top: 18px; */
+  cursor: url('../src/assets/icons/default_cursor.png'),auto;
 }
+
+ul:hover, a:hover, .visual-btn--tablet{
+  cursor: url('../src/assets/icons/cursor_hover.png'), auto;
+} 
+
+/* .url {cursor: url(myBall.cur),auto;} */
 
 body {
   
@@ -89,7 +96,8 @@ button{
 }
 
 ul{
-  height: 150px;
+  /* height: 150px; */
+  height: 100px; 
 }
 
 li, a{

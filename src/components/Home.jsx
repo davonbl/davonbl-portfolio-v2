@@ -51,7 +51,7 @@ const Home = () => {
 
 
             <div className='skills'>
-                <h3 style={{textAlign: "center"}}>Skills</h3>
+                <h3 className='skills__section-name'>Skills</h3>
                 
                 <Skills
                   skillOne = { 'HTML 5'}

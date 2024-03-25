@@ -92,6 +92,14 @@ h1{
     padding-bottom: 20px;
 }
 
+.skills__section-name{
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: underline;
+    font-size: 30px;
+    color: black;
+}
+
 /****************
   
   BreakPoints
@@ -103,8 +111,10 @@ h1{
     .home{
         display: flex;
         gap: 16px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        /* padding-top: 20px;
+        padding-bottom: 20px; */
+        padding-top: 30px; 
+        padding-bottom: 30px;
     }
 
     ul{
