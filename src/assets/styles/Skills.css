@@ -1,6 +1,8 @@
-.skills{
+/* .skills{
     margin-top: 50px;
-}
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
 
 .skills-section{
     text-align: center;  
@@ -9,6 +11,8 @@
     display: flex; 
     width: 100%; 
     justify-content: center;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
  }
 
  .skills-section-container{

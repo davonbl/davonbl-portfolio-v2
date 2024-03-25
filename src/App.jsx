@@ -32,10 +32,14 @@ function App() {
 
   const bodyElement = useRef()  
   const rootElement = useRef()
+  const clickBtnElement = useRef()
+
+  let getText;
 
   useEffect(() => {
     bodyElement.current = document.body;
-    rootElement.current = document.querySelector('#root')
+    rootElement.current = document.querySelector('#root');
+    // clickBtnElement.current = document.querySelector('.visual-btn--mobile')
   }, [])
 
   useEffect(() => {
@@ -49,12 +53,44 @@ function App() {
       // console.log(flickColor)
 
       bodyElement.current.style.backgroundColor = 'black'
+      // clickBtnElement.current.style.innerText  = 'light mode'
+      // getText = clickBtnElement.current.style.innerText
+      console.log(clickBtnElement)
     }else{
       console.log('it is now false')
       //with this color (which is by default) will show up inline when inspecting
       bodyElement.current.style.backgroundColor = ''
       bodyElement.current.style.backgroundImage = ""
+      // clickBtnElement.current.style.innerText  = 'dark mode'
+      // getText = clickBtnElement.current.style.innerText
     }
+
+
+      // Verify that the selector targets the correct element
+  // clickBtnElement.current = document.querySelector('.visual-btn--mobile');
+
+  // Check if the element is found
+
+
+    // Check if the property 'textContent' exists
+  
+  /*
+    if ('textContent' in clickBtnElement.current) {
+      // Modify the text content of the button
+      if(flickColor){
+        clickBtnElement.current.textContent = 'light mode';
+        getText = 'light mode'
+      }else{
+        clickBtnElement.current.textContent = 'dark mode';
+        getText = 'dark mode'
+      }
+      // clickBtnElement.current.textContent = flickColor ? 'light mode' : 'dark mode';
+    } else {
+      console.error('Property textContent not found on button element.');
+    }
+
+    */
+
     
   },[flickColor])
 
@@ -81,9 +117,9 @@ function App() {
       <header>
       <div className='header__mobile header__tablet'>
           <h2 className='header__h2'>davonbl</h2>
-          <button className='visual-btn--mobile' onClick={testingBtn}>Click</button>
+          <button id='testingBtn' className='visual-btn--mobile' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
 
-          <button className='btn-none' onClick={navBtn}>
+          <button className='btn-none hamburger-btn-mobile' onClick={navBtn}>
             <span className='hamburger-logo'>
               &#9776;
             </span>
@@ -96,7 +132,7 @@ function App() {
               {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
               <li className='toc-nav'><Link to ='/contact'>Contact</Link></li>
             </ul>
-            <button className='visual-btn--tablet' onClick={testingBtn}>Click</button>
+            <button className='visual-btn--tablet' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
           </nav>
       </div>
       <nav className={`nav-bar nav-bar-mobile ${isShown? 'open' : ''}`}>

@@ -50,7 +50,7 @@ const Home = () => {
             <Projects />
 
 
-            <div>
+            <div className='skills'>
                 <h3 style={{textAlign: "center"}}>Skills</h3>
                 
                 <Skills

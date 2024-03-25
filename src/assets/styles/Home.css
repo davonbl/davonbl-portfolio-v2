@@ -7,6 +7,7 @@
     width: 50%;
     /* padding-top: 22px;  this will be taken out */
     border: 10px solid rgb(137, 176, 168);
+
     filter: drop-shadow(0.8rem 0.9rem 0rem rgba(0, 0, 0, 0.85));
      /* this will be added when you hover the image for the shadow effect  */
     
@@ -15,6 +16,10 @@
 
     
 }
+
+/* .home-photo:hover{
+    filter: drop-shadow(0.8rem 0.9rem 0rem rgba(0, 0, 0, 0.85));
+} */
 
 .home-main{
     text-align: center;
@@ -78,6 +83,11 @@ h1{
 }
 
 .home{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.skills{
     padding-top: 20px;
     padding-bottom: 20px;
 }
