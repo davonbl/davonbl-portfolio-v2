@@ -1,9 +1,8 @@
-# davon-blanks-react-portfolio
+# davonbl-portfolio-v2
 
 I. About
 
-This is an upcoming portfolio site where its visual is simliar to my current portfolio website, expect that the code base is
-mostly in React and is responsive. 
+This is an second version of my portfolio site where the code base is mostly in React and is responsive. It showcases my recent and upcoming projects, and provides contact information for those who want to reach out.
 
 II. Technologies
 
