@@ -195,7 +195,7 @@ header{
   padding-left: 2px;
 }
 
-::-webkit-scrollbar-thumb {
+/* ::-webkit-scrollbar-thumb {
   box-sizing: border-box;
   display: inline-block;
   background: rgb(198, 198, 198);
@@ -212,7 +212,7 @@ header{
   background-color: rgb(254, 254, 254);
   background-size: 4px 4px;
   background-position: 0px 0px, 2px 2px;
-}
+} */
 
 .visual-btn--mobile{
   border: 2px solid white;
@@ -254,9 +254,9 @@ a{
 /* 40rem */
 @media screen and (min-width: 690px ){
 
-  a{
+  /* a{
     width: 30%;
-  }
+  } */
 
   /* .visual-btn--tablet{
     width: 30%;
