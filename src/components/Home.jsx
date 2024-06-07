@@ -2,7 +2,7 @@ import {useRef, useState, useEffect} from 'react'
 import { HashLink as SubLink } from "react-router-hash-link"
 import { Link } from "react-router-dom";
 
-import Resume from '../assets/resume/Davon_Blanks_Resume.pdf'
+import Resume from '../assets/resume/davon_blanks_resume.pdf'
 
 import '../assets/styles/Home.css'
 import davonImg from '../assets/styles/images/dmb-larger.png'
