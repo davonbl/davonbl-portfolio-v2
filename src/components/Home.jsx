@@ -62,7 +62,9 @@ const Home = () => {
                         {/* <span className='home__section--link--contact'>CONTACT</span> */}
                         {/* <span className='home__section--link--resume'>RESUME</span> */}
                         <Link 
-                        download={Resume}
+                            to={Resume}
+                            download
+                        // download={Resume}
                         // to = {githubLink} 
                         target="_blank">
                         <span className='home__section--link--resume'>RESUME</span>
