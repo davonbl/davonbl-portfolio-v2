@@ -352,6 +352,13 @@ a{
     /* width: 18%; */
     width: 31%; 
   }
+
+  .projects_description--links {
+    display: flex;
+    /* margin: 5px; */
+    width: 65%;
+    margin: auto;
+}
 }
 
 /* 1280 pixels/ 80rem for desktop  */
