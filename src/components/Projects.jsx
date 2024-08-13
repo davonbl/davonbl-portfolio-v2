@@ -55,7 +55,7 @@ const Projects = () => {
                         to ={bibliophile_compass_link}
                         target="_blank"
                         >
-                    <span className='projects__square--link'> LINK</span>    
+                    <span className='projects__square--link'> LIVE</span>    
                     </Link>
                 </div>
                     
@@ -79,7 +79,7 @@ const Projects = () => {
                              and upcoming low-income and/or first-generation college students, reflecting their individual interests.
                              */}
                             
-                            This application provides low-income and/or first-generation
+                            This collobralievy curated application provides low-income and/or first-generation
                             college students a survey to explore career prospects that match their interests.
 
                             </p>
