@@ -79,7 +79,7 @@ const Projects = () => {
                              and upcoming low-income and/or first-generation college students, reflecting their individual interests.
                              */}
                             
-                            This collobralievy curated application provides low-income and/or first-generation
+                            This collaborative and curated application provides low-income and/or first-generation
                             college students a survey to explore career prospects that match their interests.
 
                             </p>
