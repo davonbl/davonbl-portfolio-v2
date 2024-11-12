@@ -23,10 +23,10 @@ const About = () => {
                         and literary sectors, and focused in being part of the tech ecosystem at large.
                     </p>
                     <p>
-                        Currently, I am a fellow with The Knowledge House (TKH) under the web development track. In 
-                        this program, my aim is also an extension to one of my never-ending goals: to deepen my understanding 
-                        of the software engineering profession and to creatively build and improve digital products that 
-                        contributes to accessibility and utility of information to and for all.
+                        Currently, I work as a Web Developer Apprentice at The Knowledge House (TKH). In this 
+                        apprenticeship, my contributions are also an extension of one of my ongoing goals: to 
+                        deepen my understanding of the software engineering profession, and to creatively build 
+                        and improve digital products that contributes to the accessibility and utility of information for all.
                     </p>
                 </div>
             </section>
