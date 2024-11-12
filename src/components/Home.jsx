@@ -31,6 +31,10 @@ import mySqlLogo from '../assets/svg-files/mysql-free.svg'
 import postGresLogo from '../assets/svg-files/postgresql-free.svg'
 import npmLogo from '../assets/svg-files/npm-free.svg'
 
+import sequelizeLogo from '../assets/svg-files/sequelize.svg'
+import nextJSLogo from '../assets/svg-files/nextjs.svg'
+import postmanLogo from '../assets/svg-files/postman.svg'
+
 
 const Home = () => {
 
@@ -88,35 +92,44 @@ const Home = () => {
                 <h3 className='skills__section-name'>Skills</h3>
                 
                 <Skills
-                  skillOne = { 'HTML 5'}
-                  skillOneImg={html5Logo}
-                  skillTwo = {'CSS 3'}
-                  skillTwoImg={css3Logo}
-                  skillThree = { 'SASS'}
-                  skillThreeImg = {sassLogo}
-                />
-                <Skills
                   skillOne = { 'Javascript'}
                   skillOneImg= {javascriptLogo}
-                  skillTwo = {'Node JS'}
-                  skillTwoImg={nodejsLogo}
+                  skillTwo = {'Next JS'}
+                  skillTwoImg={nextJSLogo}
                   skillThree = { 'React JS'}
                   skillThreeImg = {reactjsLogo}
                   />
 
                 <Skills
-                  skillOne = { 'Prisma'}
-                  skillOneImg = {prismaLogo}
-                  skillTwo = {'Git'}
-                  skillTwoImg = {gitLogo}
-                  skillThree = { 'Github'}
-                  skillThreeImg = {githubLogo}
+                  skillOne = {'Node JS'}
+                  skillOneImg={nodejsLogo}
+                  skillTwo = { 'HTML 5'}
+                  skillTwoImg={html5Logo}
+                  skillThree = {'CSS 3'}
+                  skillThreeImg={css3Logo}
+                />
+
+                <Skills
+                  skillOne = { 'SASS'}
+                  skillOneImg = {sassLogo}
+                  skillTwo = { 'Prisma'}
+                  skillTwoImg = {prismaLogo}
+                  skillThree = {'Sequelize'}
+                  skillThreeImg = {sequelizeLogo}
                   />
                 <Skills
                   skillOne = { 'MySql'}
                   skillOneImg = {mySqlLogo}
                   skillTwo = {'PostGresSql'}
                   skillTwoImg = {postGresLogo}
+                  skillThree = { 'Postman'}
+                  skillThreeImg = {postmanLogo}
+                  />
+                <Skills
+                  skillOne = {'Git'}
+                  skillOneImg = {gitLogo}
+                  skillTwo = { 'Github'}
+                  skillTwoImg = {githubLogo}
                   skillThree = { 'NPM'}
                   skillThreeImg = {npmLogo}
                   />
