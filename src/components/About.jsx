@@ -11,7 +11,7 @@ const About = () => {
                 </div>
                 <div className='about-me__info'>
                     <p>
-                        Peace! My name is Davon, an upcoming Software Engineer who is 
+                        Peace! My name is Davon, an Software Developer who is 
                         a native resident of New York City.
                     </p>
                     <p>
