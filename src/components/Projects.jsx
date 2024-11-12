@@ -25,7 +25,7 @@ const Projects = () => {
 
                 <div className='projects__description'>
                     <p>
-                        An responsive app where users can pick their 6 starter Pokémon of the day.
+                        A responsive app where users can pick their six starter Pokémon of the day.
                     </p>
                     <Link
                             to ={pokemonLink}
@@ -41,7 +41,7 @@ const Projects = () => {
                 <span className='projects__name'>Bibliophile's Compass</span>
                 <div className='projects__description'>
                     <p>
-                        This application assists users in finding bookstores in the New York metropolitan area, 
+                        This application assists users in finding bookstores in the New York metropolitan area 
                         and surrounding neighborhoods.
                     </p>
                 <div className='projects_description--links'>
@@ -79,9 +79,8 @@ const Projects = () => {
                              and upcoming low-income and/or first-generation college students, reflecting their individual interests.
                              */}
                             
-                            This collaborative and curated application provides low-income and/or first-generation
-                            college students a survey to explore career prospects that match their interests.
-
+                                This collaborative, curated application provides low-income and first-generation 
+                                college students with a survey to explore career prospects that match their interests.
                             </p>
                         <Link
                             to ={careerSpring}
@@ -104,8 +103,9 @@ const Projects = () => {
 
                     <div className='projects__description'>
                         <p>
-                            Hollow Tree, an upcoming NYC mobile app, helps users find nearby study spots with desired 
-                            amenities like outlets, tables, wifi, and affordability.
+                            Hollow Tree, an upcoming NYC mobile app, helps users 
+                            find nearby study spots with amenities like outlets, tables, Wi-Fi, 
+                            and affordability.
                         </p>
                         {/* <Link
                         to ={bookstoreLink}
