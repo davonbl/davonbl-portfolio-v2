@@ -4,7 +4,7 @@ import pokemonGif from '../assets/gif-files/starter-pokemon.gif'
 import bookstoreGif from '../assets/gif-files/bookstore-compass.gif'
 import careerspringGif from '../assets/gif-files/careerspring.gif'
 import hollowTreePng from '../assets/hollow-tree/hollow-tree-landing-page.jpg'
-
+import placeHolder from '../assets/png-and-jpg-files/placeholder_image.png'
 import '../assets/styles/Projects.css'
 
 const Projects = () => {
@@ -107,14 +107,14 @@ const Projects = () => {
             </div> */}
 
             <div className="projects__all projects__three">
-                <img className='projects__image projects__image-three' src={hollowTreePng}/>
+                <img className='projects__image projects__image-three' src={placeHolder} alt='image of knowledge base application'/>
                 <div className='overlay'>
-                    <span className='projects__name'>Hollow Tree</span>
+                    <span className='projects__name'>Knowledge Base</span>
 
                     <div className='projects__description'>
                         <p>
-                            KnowledgeBase, an Full-stack collaborative app where students and teachers exchange tech knowledge. Features include AI chatbot
-                            support and AI-generated lessons
+                            KnowledgeBase, a full-stack collaborative app where students and teachers exchange tech knowledge. Features include AI chatbot
+                            support and AI-generated lessons.
                         </p>
                         {/* <Link
                         to ={bookstoreLink}
