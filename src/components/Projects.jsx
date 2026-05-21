@@ -89,14 +89,7 @@ const Projects = () => {
                         <span className='projects__square--link'>LIVE</span>    
                     </Link>
                 </div>
-
-
-
-
-
-
-
-            <div className="projects__all projects__three">
+            {/* <div className="projects__all projects__three">
                 <img className='projects__image projects__image-three' src={hollowTreePng}/>
                 <div className='overlay'>
                     <span className='projects__name'>Hollow Tree</span>
@@ -106,6 +99,22 @@ const Projects = () => {
                             Hollow Tree, an upcoming NYC mobile app, helps users 
                             find nearby study spots with amenities like outlets, tables, Wi-Fi, 
                             and affordability.
+                        </p>
+                        <span className='projects__square--link'>COMING SOON</span> 
+
+                    </div>
+                </div>
+            </div> */}
+
+            <div className="projects__all projects__three">
+                <img className='projects__image projects__image-three' src={hollowTreePng}/>
+                <div className='overlay'>
+                    <span className='projects__name'>Hollow Tree</span>
+
+                    <div className='projects__description'>
+                        <p>
+                            KnowledgeBase, an Full-stack collaborative app where students and teachers exchange tech knowledge. Features include AI chatbot
+                            support and AI-generated lessons
                         </p>
                         {/* <Link
                         to ={bookstoreLink}
@@ -117,13 +126,6 @@ const Projects = () => {
 
                     </div>
                 </div>
-                {/* <Link
-                    to ={pokemonLink}
-                    target="_blank"
-                    >
-                    <span className='projects__square--link'>GITHUB</span>    
-                </Link> */}
-
             </div>
                     
             </div>
