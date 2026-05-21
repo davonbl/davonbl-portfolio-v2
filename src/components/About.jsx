@@ -23,8 +23,7 @@ const About = () => {
                         and literary sectors, and focused in being part of the tech ecosystem at large.
                     </p>
                     <p>
-                        Currently, I work as a Web Developer Apprentice at The Knowledge House (TKH). In this 
-                        apprenticeship, my contributions are also an extension of one of my ongoing goals: to 
+                        Overall, my goals are as follows : to 
                         deepen my understanding of the software engineering profession, and to creatively build 
                         and improve digital products that contributes to the accessibility and utility of information for all.
                     </p>
