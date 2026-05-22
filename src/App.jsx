@@ -28,7 +28,9 @@ import './App.css'
 function App() {
 
   const [isShown, setIsShown] = useState(false)
-  const [flickColor, setFlickColor]= useState(false)
+  const [flickColor, setFlickColor]= useState(true)
+
+  const [clickNavButton, setClickNavButton] = useState(true)
 
   const bodyElement = useRef()  
   const rootElement = useRef()
@@ -109,6 +111,10 @@ function App() {
     console.log('click here')
     setFlickColor(initalColor => !initalColor)
   }
+  const testingBtn2 = () => {
+    console.log('click here')
+    // setFlickColor(initalColor => !initalColor)
+  }
 
   console.log('color-btn', flickColor)
 
@@ -118,9 +124,15 @@ function App() {
     return (
       <header>
       <div className='header__mobile header__tablet'>
-          <Link className='logoName' to ='/'><h2 className='header__h2'>davonbl</h2></Link>
-          {/* <h2 className='header__h2'>davonbl</h2> */}
-          <button id='testingBtn' className='visual-btn--mobile' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
+          <div className='logoName'>
+            <h2 className='header__h2'>
+              <Link className='logoName' to ='/'>davonbl</Link>
+            </h2>
+          </div>
+
+
+          {/* <h2 className='header__h2'><Link className='logoName' to ='/'>davonbl </h2> */}
+          <button id='testingBtn' className='visual-btn--mobile' onClick={testingBtn}>{flickColor?'light mode' : 'dark mode'}</button>
 
           <button className='btn-none hamburger-btn-mobile' onClick={navBtn}>
             <span className='hamburger-logo'>
@@ -130,12 +142,12 @@ function App() {
 
           <nav className={`nav-bar nav-bar-tablet`}>
             <ul>
-              <li className='toc-nav'><Link to ='/'>Home</Link></li>
-              <li className='toc-nav'><Link to ='/about'>About</Link></li>
+              <Link to ='/'><li className='toc-nav'>Home</li></Link>
+              <Link to ='/about'><li className='toc-nav'>About</li></Link>
               {/* <li className='toc-nav'><Link to ='/skills'>Skills</Link></li> */}
               {/* <li className='toc-nav'><Link to ='/contact'>Contact</Link></li> */}
             </ul>
-            <button className='visual-btn--tablet' onClick={testingBtn}>{flickColor?'dark mode' : 'light mode'}</button>
+            <button className='visual-btn--tablet' onClick={testingBtn}>{flickColor?'light mode' : 'dark mode'}</button>
           </nav>
       </div>
       <nav className={`nav-bar nav-bar-mobile ${isShown? 'open' : ''}`}>
@@ -156,19 +168,35 @@ function App() {
 
   return (
     <>
+      {/* <NavBar/>
+      {
+        clickNavButton === true?
+        <>
+          <Home/>
+
+        </>
+      : (
+          <About/>
+        )
+      } */}
+
       <Router>
         <NavBar/>
         <Routes>
+
+      {/* {
+        clickNavButton === true?
+        <>
+          <Home/>
+
+        </>
+      : (
+          <About/>
+        )
+      }  */}
           <Route path='/about' element={<About/>}/>
 
-          {/* <Route path='/contact' element={
 
-            <Contact
-              email = 'davonbl@gmail.com'
-              link = 'https://www.linkedin.com/in/davonbl/'
-            />}
-          
-          /> */}
 
 
           <Route path='/' element={<Home/>}/>
@@ -215,3 +243,11 @@ function App() {
 }
 
 export default App
+          {/* <Route path='/contact' element={
+
+            <Contact
+              email = 'davonbl@gmail.com'
+              link = 'https://www.linkedin.com/in/davonbl/'
+            />}
+          
+          /> */}
