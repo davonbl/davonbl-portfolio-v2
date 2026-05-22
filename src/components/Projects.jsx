@@ -5,6 +5,8 @@ import bookstoreGif from '../assets/gif-files/bookstore-compass.gif'
 import careerspringGif from '../assets/gif-files/careerspring.gif'
 import hollowTreePng from '../assets/hollow-tree/hollow-tree-landing-page.jpg'
 import placeHolder from '../assets/png-and-jpg-files/placeholder_image.png'
+
+import comingSoon from '../assets/png-and-jpg-files/coming_soon_image.jpg'
 import '../assets/styles/Projects.css'
 
 const Projects = () => {
@@ -107,7 +109,7 @@ const Projects = () => {
             </div> */}
 
             <div className="projects__all projects__three">
-                <img className='projects__image projects__image-three' src={placeHolder} alt='image of knowledge base application'/>
+                <img className='projects__image projects__image-three' src={comingSoon} alt='image of knowledge base application'/>
                 <div className='overlay'>
                     <span className='projects__name'>Knowledge Base</span>
 
@@ -122,7 +124,7 @@ const Projects = () => {
                         >
                         <span className='projects__square--link'>GITHUB</span>    
                         </Link> */}
-                        <span className='projects__square--link'>COMING SOON</span> 
+                        {/* <span className='projects__square--link'>COMING SOON</span>  */}
 
                     </div>
                 </div>
