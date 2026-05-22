@@ -201,8 +201,8 @@ function App() {
 
           <Route path='/' element={<Home/>}/>
 
-          <Route path='/skills' element={
-            <>
+          {/* <Route path='/skills' element={
+            <sectiion className="logo-carousel">
             <Skills
               skillOne = { 'HTML 5'}
               skillOneImg={html5Logo}
@@ -219,7 +219,7 @@ function App() {
               skillTwoImg={nodejsLogo}
               skillThree = { 'React JS'}
               skillThreeImg = {reactjsLogo}
-              />
+            />
 
             <Skills
               skillOne = { 'Prisma'}
@@ -229,10 +229,10 @@ function App() {
               skillThree = { 'Github'}
               skillThreeImg = {githubLogo}
               skillThreeWidth1={'111%;'}
-              />
-            </>
+            />
+            </sectiion>
           }
-          />
+          /> */}
 
           <Route path='/contact' element={<Contact/>} />
         </Routes>
