@@ -113,7 +113,7 @@ const Projects = () => {
             <div className="projects__all projects__three">
                 <img className='projects__image projects__image-three' src={comingSoon} alt='image of knowledge base application'/>
                 <div className='overlay'>
-                    <span className='projects__name'>Knowledge Base</span>
+                    <span className='projects__name'>KnowledgeBase</span>
 
                     <div className='projects__description'>
                         <p>
