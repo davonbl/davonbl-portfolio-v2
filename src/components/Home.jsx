@@ -35,6 +35,11 @@ import sequelizeLogo from '../assets/svg-files/sequelize.svg'
 import nextJSLogo from '../assets/svg-files/nextjs.svg'
 import postmanLogo from '../assets/svg-files/postman.svg'
 
+import redux from '../assets/svg-files/redux-logo.svg'
+import sqlite from  '../assets/svg-files/sqlite-svg.svg'
+import typescriptLogo from '../assets/svg-files/typescript_logo_transparent.svg'
+
+
 
 const Home = () => {
 
@@ -54,7 +59,7 @@ const Home = () => {
                     <h1>
                         {/* Peace! My name is Davon Blanks and 
                         I am a Software Enginner in Training! */}
-                        Peace, I'm Davon. Let's build and make a 
+                        Peace, I&#39;m Davon. Let&#39;s build and make a
                         impact. 
                     </h1>
                     <div className='home__section--links'>
@@ -91,48 +96,64 @@ const Home = () => {
             <div className='skills'>
                 <h3 className='skills__section-name'>Skills</h3>
                 
-                <Skills
-                  skillOne = { 'Javascript'}
-                  skillOneImg= {javascriptLogo}
-                  skillTwo = {'Next JS'}
-                  skillTwoImg={nextJSLogo}
-                  skillThree = { 'React JS'}
-                  skillThreeImg = {reactjsLogo}
-                  />
+                <sectiion className="logo-carousel">
+                    <Skills
+                    className= "group"
+                      skillOne = { 'Javascript'}
+                      skillOneImg= {javascriptLogo}
+                      skillTwo = {'Next JS'}
+                      skillTwoImg={nextJSLogo}
+                      skillThree = { 'React JS'}
+                      skillThreeImg = {reactjsLogo}
+                    />
 
-                <Skills
-                  skillOne = {'Node JS'}
-                  skillOneImg={nodejsLogo}
-                  skillTwo = { 'HTML 5'}
-                  skillTwoImg={html5Logo}
-                  skillThree = {'CSS 3'}
-                  skillThreeImg={css3Logo}
-                />
+                    <Skills
+                    aria-hidden
+                      skillOne = {'Node JS'}
+                      skillOneImg={nodejsLogo}
+                      skillTwo = { 'HTML 5'}
+                      skillTwoImg={html5Logo}
+                      skillThree = {'CSS 3'}
+                      skillThreeImg={css3Logo}
+                    />
 
-                <Skills
-                  skillOne = { 'SASS'}
-                  skillOneImg = {sassLogo}
-                  skillTwo = { 'Prisma'}
-                  skillTwoImg = {prismaLogo}
-                  skillThree = {'Sequelize'}
-                  skillThreeImg = {sequelizeLogo}
-                  />
-                <Skills
-                  skillOne = { 'MySql'}
-                  skillOneImg = {mySqlLogo}
-                  skillTwo = {'PostGresSql'}
-                  skillTwoImg = {postGresLogo}
-                  skillThree = { 'Postman'}
-                  skillThreeImg = {postmanLogo}
-                  />
-                <Skills
-                  skillOne = {'Git'}
-                  skillOneImg = {gitLogo}
-                  skillTwo = { 'Github'}
-                  skillTwoImg = {githubLogo}
-                  skillThree = { 'NPM'}
-                  skillThreeImg = {npmLogo}
-                  />
+                    <Skills
+                    aria-hidden
+                      skillOne = { 'SASS'}
+                      skillOneImg = {sassLogo}
+                      skillTwo = { 'Prisma'}
+                      skillTwoImg = {prismaLogo}
+                      skillThree = {'Sequelize'}
+                      skillThreeImg = {sequelizeLogo}
+                    />
+                    <Skills
+                    aria-hidden
+                      skillOne = {'Redux'}
+                      skillOneImg = {redux}
+                      skillTwo = { 'TypeScript'}
+                      skillTwoImg = {typescriptLogo}
+                      skillThree = { 'SQLite'}
+                      skillThreeImg = {sqlite}
+                      />
+                    <Skills
+                    aria-hidden
+                      skillOne = { 'MySql'}
+                      skillOneImg = {mySqlLogo}
+                      skillTwo = {'PostGresSql'}
+                      skillTwoImg = {postGresLogo}
+                      skillThree = { 'Postman'}
+                      skillThreeImg = {postmanLogo}
+                    />
+                    <Skills
+                    aria-hidden
+                      skillOne = {'Git'}
+                      skillOneImg = {gitLogo}
+                      skillTwo = { 'Github'}
+                      skillTwoImg = {githubLogo}
+                      skillThree = { 'NPM'}
+                      skillThreeImg = {npmLogo}
+                    />
+                </sectiion>
             </div>
             
             <Contact
