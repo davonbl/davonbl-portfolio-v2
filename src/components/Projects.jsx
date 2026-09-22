@@ -18,7 +18,6 @@ const Projects = () => {
     const bibliophile_compass_link = 'https://bibliophile-compass.vercel.app/'
     const careerSpring = 'https://career-spring-interest-finder-sand.vercel.app/'
 
-    
 
     return (
         <section className="projects">
