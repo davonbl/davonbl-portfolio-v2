@@ -23,51 +23,8 @@ const Projects = () => {
     return (
         <section className="projects">
             <h2 className='projects__section-name'>Projects</h2>
-            <div className="projects__all projects__one">
-                <img className='projects__image' src={pokemonGif}/>
-                <span className='projects__name'>Starter Pokemon</span>
 
-                <div className='projects__description'>
-                    <p>
-                        A responsive app where users can pick their six starter Pokémon of the day.
-                    </p>
-                    <Link
-                            to ={pokemonLink}
-                            target="_blank"
-                            >
-                        <span className='projects__square--link'>GITHUB</span>    
-                    </Link>
-                </div>
-
-            </div>
             <div className="projects__all projects__two">
-                <img className='projects__image' src={bookstoreGif}/>
-                <span className='projects__name'>Bibliophile's Compass</span>
-                <div className='projects__description'>
-                    <p>
-                        This application assists users in finding bookstores in the New York metropolitan area 
-                        and surrounding neighborhoods.
-                    </p>
-                <div className='projects_description--links'>
-                    <Link
-                        to ={bookstoreLink}
-                        target="_blank"
-                        >
-                    <span className='projects__square--link'>GITHUB</span>    
-                    </Link>
-                    <Link
-                        to ={bibliophile_compass_link}
-                        target="_blank"
-                        >
-                    <span className='projects__square--link'> LIVE</span>    
-                    </Link>
-                </div>
-                    
-                </div>
-            </div>
-
-                <div className="projects__all projects__two">
-                {/* src={} */}
                     <img className='projects__image' src={careerspringGif} alt='CareerSpring video gif'/>
                     <span className='projects__name'>CareerSpring</span>
                         <div className='projects__description'>
@@ -86,13 +43,62 @@ const Projects = () => {
                                 This collaborative, curated application provides low-income and first-generation 
                                 college students with a survey to explore career prospects that match their interests.
                             </p>
+                            <Link
+                                to ={careerSpring}
+                                target="_blank"
+                            >
+                                <span className='projects__square--link'>LIVE</span>    
+                            </Link>
+                        </div>
+            </div>
+
+            <div className="projects__all projects__two">
+                <img className='projects__image' src={bookstoreGif}/>
+                <span className='projects__name'>Bibliophile's Compass</span>
+                <div className='projects__description'>
+                    <p>
+                        This application assists users in finding bookstores in the New York metropolitan area 
+                        and surrounding neighborhoods.
+                    </p>
+                    <div className='projects_description--links'>
                         <Link
-                            to ={careerSpring}
+                            to ={bookstoreLink}
                             target="_blank"
-                        >
-                        <span className='projects__square--link'>LIVE</span>    
+                            >
+                        <span className='projects__square--link'>GITHUB</span>    
+                        </Link>
+                        <Link
+                            to ={bibliophile_compass_link}
+                            target="_blank"
+                            >
+                        <span className='projects__square--link'> LIVE</span>    
+                        </Link>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="projects__all projects__one">
+                <img className='projects__image' src={pokemonGif}/>
+                <span className='projects__name'>Starter Pokemon</span>
+
+                <div className='projects__description'>
+                    <p>
+                        A responsive app where users can pick their six starter Pokémon of the day.
+                    </p>
+                    <Link
+                            to ={pokemonLink}
+                            target="_blank"
+                            >
+                        <span className='projects__square--link'>GITHUB</span>    
                     </Link>
                 </div>
+
+            </div>
+
+            {/* <div className="projects__all projects__two"></div> */}
+
             {/* <div className="projects__all projects__three">
                 <img className='projects__image projects__image-three' src={hollowTreePng}/>
                 <div className='overlay'>
@@ -132,7 +138,7 @@ const Projects = () => {
                 </div>
             </div>
                     
-            </div>
+            <div></div>
         </section>
     )
 }
